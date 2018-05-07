@@ -4,5 +4,9 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="eldora" />
+    <orderEntry type="module" module-name="eldora" />
+    <orderEntry type="module" module-name="EldoraSystem" />
+    <orderEntry type="module" module-name="codehacking" />
   </component>
 </module>

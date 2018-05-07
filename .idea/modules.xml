@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/E-commerce.iml" filepath="$PROJECT_DIR$/.idea/E-commerce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EldoraSystem/.idea/EldoraSystem.iml" filepath="$PROJECT_DIR$/../EldoraSystem/.idea/EldoraSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../codehacking/.idea/codehacking.iml" filepath="$PROJECT_DIR$/../codehacking/.idea/codehacking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../eldora/.idea/eldora.iml" filepath="$PROJECT_DIR$/../eldora/.idea/eldora.iml" />
     </modules>
   </component>
 </project>

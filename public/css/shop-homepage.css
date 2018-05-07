@@ -53,3 +53,20 @@ footer {
     margin: 50px 0;
 }
 
+.log ul .login {
+
+    left: 850px;
+    font-weight: bold;
+}
+
+.log ul .login:hover {
+
+    background-color: #2a6496;
+
+}
+
+.log ul li{
+
+    margin-right:10px ;
+
+}

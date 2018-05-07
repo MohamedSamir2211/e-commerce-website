@@ -6,13 +6,13 @@
     </ol>
     <div class="carousel-inner">
         <div class="item active">
-            <img class="slide-image" src="http://placehold.it/800x300" alt="">
+            <img class="slide-image" src="img/software.png" alt="">
         </div>
         <div class="item">
-            <img class="slide-image" src="http://placehold.it/800x300" alt="">
+            <img class="slide-image" src="img/javascriptlogo-2.jpg" alt="">
         </div>
         <div class="item">
-            <img class="slide-image" src="http://placehold.it/800x300" alt="">
+            <img class="slide-image" src="img/php-courses-1-265.jpg" alt="">
         </div>
     </div>
     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">

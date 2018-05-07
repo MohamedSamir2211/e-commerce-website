@@ -1,5 +1,4 @@
 <?php
-
 //session_start();
 //
 //if(!isset($_SESSION['username'])) {
@@ -12,8 +11,6 @@
 //if(isset($_SESSION['username'])){
 //
 //  echo "welcome ". $_SESSION['username'];
-//}
-
 
 require_once("../resources/config.php");
 include(TEMPLATE_FRONT . DS . "header.php");

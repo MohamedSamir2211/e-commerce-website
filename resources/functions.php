@@ -184,9 +184,9 @@ function login_user(){
        if (mysqli_num_rows($query) == 0) {
 
 
-           set_message('Wrong username or password');
+           echo '<script type="text/javascript"> alert("Wrong Username or Password");</script>';
 
-       } else if($row['role_id'] == 0 ) {
+       } else if($row['role_id'] == 3 ) {
 
            session_start();
            $_SESSION['username'] = $username;
@@ -204,18 +204,48 @@ function login_user(){
    }
 
 
-function logout_user()
-{
+function Signup_user(){
+       global $connection;
+    if(isset($_POST['signup'])) {
+        $username = escape_string($_POST['username']);
+        $password = escape_string($_POST['password']);
+        $email    = escape_string($_POST['email']);
 
-    if (isset($_POST['logout'])) {
 
-        if (isset($_SESSION['username'])) {
+        $query = query("SELECT * FROM users WHERE username = '{$username}' OR  email = '{$email}' ");
+        confirm($query);
 
-            session_destroy();
-            set_message('You are Logged out ');
+        if (mysqli_num_rows($query) > 0) {
+
+            echo '<script type="text/javascript"> alert("username or email is already exist,please Try Another one");</script>';
+
+        } else{
+
+            $query = query("INSERT INTO users (username,email,password,role_id)  VALUES('{$username}','{$email}','{$password}',3)");
+            confirm($query);
+
+            if (mysqli_affected_rows($connection) > 0) {
+
+                 set_message('you are registered successfully,now you can login');
+                 redirect("login.php");
+            }
         }
+
     }
 }
+
+//function logout_user()
+//{
+//
+//    if (isset($_POST['logout'])) {
+//
+//        if (isset($_SESSION['username'])) {
+//
+//            session_destroy();
+//            set_message('You are Logged out ');
+//        }
+//    }
+//}
 
 function send_message()
 {

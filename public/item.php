@@ -11,7 +11,7 @@
 <?php
 
 
-$query = query(" SELECT * FROM products WHERE product_id = " . escape_string($_GET['id']) . " ");
+$query = query(" SELECT * FROM products WHERE product_id = ".escape_string($_GET['id'])." ");
 confirm($query);
 
 while($row = fetch_array($query)):
